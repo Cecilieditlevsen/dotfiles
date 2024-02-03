@@ -1,0 +1,12 @@
+[core]
+	excludesfile = /Users/cec/.gitignore_global
+[user]
+	name = Cecilie Ditlevsen
+	email = cecilierd98@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
+[push]
+	default = current
+
