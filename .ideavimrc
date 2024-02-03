@@ -1,0 +1,103 @@
+let mapleader=" "
+
+" Common settings
+set clipboard=unnamedplus
+set clipboard+=ideaput
+set incsearch
+set number
+set rnu
+set showmode
+set scrolloff=8
+set visualbell
+
+" Idea specific settings
+set ideajoin
+set ideastatusicon=enabled
+set idearefactormode=keep
+
+" Plugins
+Plug 'chrisbra/matchit'
+Plug 'dbakker/vim-paragraph-motion'
+Plug 'easymotion/vim-easymotion'
+Plug 'kana/vim-textobj-entire'
+Plug 'machakann/vim-highlightedyank'
+Plug 'preservim/nerdtree'
+Plug 'tommcdo/vim-exchange'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/argtextobj.vim'
+set sneak
+set quickscope
+
+" Plugin settings
+let g:argtextobj_pairs="[:],(:),<:>"
+let g:highlightedyank_highlight_duration = "60"
+" let g:highlightedyank_highlight_color = "rgba(33, 66, 131, 200)"
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" General mappings
+inoremap jj <Esc>A
+inoremap jk <Esc>
+nnoremap H ^
+nnoremap L $
+vnoremap H ^
+vnoremap L $
+nnoremap 0 ^
+nnoremap ^ 0
+nnoremap N Nzz
+nnoremap Y y$
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzz
+vnoremap p "_dP
+nnoremap U <C-R>
+
+" Paste from previous register
+nnoremap ,p "0p
+nnoremap ,P "0P
+
+" Editor action mappings ~ General
+map <leader>a <Action>(EditorAddCaretPerSelectedLine)
+map <leader>b <Action>(ShowNavBar)
+map <leader>c <Action>(ChooseRunConfiguration)
+map <leader>d <Action>(SelectAllOccurrences)
+map <leader>e <Action>(ActivateProjectToolWindow)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <leader>t <Action>(CopyReferencePopupGroup)
+map <leader>f <Action>(AceWordStartAction)
+map <leader>i <Action>(ParameterInfo)
+map <leader>m <Action>(EditorMatchBrace)
+map <leader>o <Action>(OptimizeImports)
+map <leader>p <Action>(ReformatWithPrettierAction)
+map <leader>q <Action>(HideAllWindows)
+map <leader>r <Action>(RenameElement)
+map <leader>s <Action>(FileStructurePopup)
+map <leader>u <Action>(CloseAllEditors)
+map <leader>v <Action>(Vcs.RollbackChangedLines)
+map gt <Action>(GotoTest)
+
+" Editor action mappings ~ Running and Debugging
+map ,r <Action>(RunClass)
+map ,c <Action>(ChooseRunConfiguration)
+map ,f <Action>(RerunFailedTests)
+map ,t <Action>(ContextRun)
+map ,u <Action>(Rerun)
+map ,b <Action>(ToggleLineBreakpoint)
+map ,d <Action>(ContextDebug)
+map ,n <Action>(ActivateDebugToolWindow)
+
+" Leader editor action mappings
+map <leader>w 0v$%$
+map <leader>W v$%$
+map <leader>x v$
+map <leader>y 0v$%$y
+map <leader>Y v$%y
+map <leader>Z V$%y
+
+" Strict mode for development ---------------
+set ideastrictmode
+
+" Open ideavim settings and reload
+nmap \e :e ~/.ideavimrc<CR>
+nmap \r :action IdeaVim.ReloadVimRc.reload<CR>
+
+" Find more examples here: https://jb.gg/share-ideavimrc

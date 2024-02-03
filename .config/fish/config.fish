@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Add Yabai functions to path
+set fish_function_path $fish_function_path $fish_function_path/yabai
+
 # Override fish greeting
 set fish_greeting
 
