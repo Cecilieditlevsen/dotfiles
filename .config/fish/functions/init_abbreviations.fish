@@ -4,6 +4,12 @@ function init_abbreviations -d 'Initialize fish abbreviations'
   # abbr --add cat 'bat'
   abbr --add j 'z'
 
+  # eza
+  abbr --add l 'eza -a -1 --git --icons'
+  abbr --add ld 'eza -D -1 --git --icons'
+  abbr --add la 'eza -a -l --git --icons'
+  abbr --add ll 'eza -a -l --git --icons'
+
   # homebrew (package manager)
   abbr --add b 'brew'
   abbr --add bu 'brew upgrade'
@@ -23,7 +29,7 @@ function init_abbreviations -d 'Initialize fish abbreviations'
   abbr --add ghpcd 'gh pr create -f -d'
   abbr --add ghw 'gh workflow view -w'
 
-  # gitui
+
   abbr --add g 'gitui'
 
   # git

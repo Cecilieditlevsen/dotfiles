@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 # Add Yabai functions to path
-set fish_function_path $fish_function_path $fish_function_path/yabai
+set fish_function_path $fish_function_path $fish_function_path/yabai $fish_function_path/az
 
 # Override fish greeting
 set fish_greeting

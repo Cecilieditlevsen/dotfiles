@@ -21,6 +21,7 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   # Messages
   yabai -m rule --add app='^Messenger$' space='messages' manage=off
   yabai -m rule --add app='^Slack$' space='messages'
+  yabai -m rule --add app='^Microsoft Teams classic$' space='messages'
 
   # Notes
   yabai -m rule --add app='^Notion$' space='^notes'
@@ -52,5 +53,6 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   yabai -m rule --add app='^Hidden Bar$' manage=off
   yabai -m rule --add app='^Homerow$' manage=off
   yabai -m rule --add app='^MonitorControl$' manage=off
+  yabai -m rule --add app='^Bitwarden$' manage=off
   yabai -m rule --add app='^MeetingBar$' manage=off
 end
