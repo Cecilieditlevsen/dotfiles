@@ -29,7 +29,13 @@ function init_abbreviations -d 'Initialize fish abbreviations'
   abbr --add ghpcd 'gh pr create -f -d'
   abbr --add ghw 'gh workflow view -w'
 
+# az (azure devops cli)
+  abbr --add azpir 'az pipelines run --name Kop20 --branch'
+  abbr --add azprc  'az repos pr create'
+  abbr --add fazprc 'az_pr_create'
 
+
+# gitui
   abbr --add g 'gitui'
 
   # git
@@ -105,6 +111,11 @@ function init_abbreviations -d 'Initialize fish abbreviations'
   abbr --add gsta 'git stash apply'
   abbr --add gsw 'git switch'
   abbr --add gswc 'git switch -c'
+
+
+ # yarn
+  abbr --add yst 'yarn start'
+  abbr --add ybl 'yarn build'
 
   # npm
   abbr --add ni 'npm install'
