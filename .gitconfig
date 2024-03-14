@@ -11,3 +11,6 @@
 [push]
 	default = current
 
+[alias]
+	pr = "!f() { exec az repos pr \"$@\"; }; f"
+	repo = "!f() { exec az repos \"$@\"; }; f"
