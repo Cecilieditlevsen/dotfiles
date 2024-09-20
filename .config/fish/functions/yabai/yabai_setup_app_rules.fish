@@ -11,7 +11,7 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   yabai -m rule --add app='^Firefox$' space='^browser'
 
   # Terminal
-  yabai -m rule --add app='^WezTerm$' space='^terminal' opacity=$opacity
+  yabai -m rule --add app='^Warp$' space='^terminal' opacity=$opacity
 
   # Editor
   yabai -m rule --add app='WebStorm$' space='^editor' opacity=$opacity
