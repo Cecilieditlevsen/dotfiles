@@ -2,7 +2,7 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   set -l opacity 0.96
 
   # Fig autocomplete
-  yabai -m rule --add app='^Fig$' 
+  yabai -m rule --add app='^Fig$'
 
   # Browser
   yabai -m rule --add app='^Brave Browser$' space='^browser'
@@ -21,7 +21,6 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   # Messages
   yabai -m rule --add app='^Messenger$' space='messages' manage=off
   yabai -m rule --add app='^Slack$' space='messages'
-  yabai -m rule --add app='^Microsoft Teams (work or school)$' space='messages'
 
   # Notes
   yabai -m rule --add app='^Notion$' space='^notes'
@@ -36,10 +35,17 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   # Mail
   yabai -m rule --add app='^Spark Desktop$' title='^New Message$' space='^mail' manage=off
   yabai -m rule --add app='^Microsoft Outlook$' space='^mail'
+  yabai -m rule --add app='^Microsoft Outlook$' title='^\d+\s*Reminder(s)?$' manage=off
+  yabai -m rule --add app='^Microsoft Outlook$' title='^.*cec@charlietango\.dk$' manage=off
   yabai -m rule --add app='^Spark Desktop$' space='^mail'
 
   # Design tools
   yabai -m rule --add app='^Figma$' space='^other'
+
+  # Teams
+  yabai -m rule --add app='^Microsoft Teams$' space='^other'
+  yabai -m rule --add app='^Microsoft Teams$' title='^Dagrofa/CT.*$'  space='^other'
+  yabai -m rule --add app='^Microsoft Teams$' title='^Microsoft Teams Meeting'  space='^other'
 
   # Don't manage
   yabai -m rule --add app='^CleanShot X$' manage=off
@@ -56,6 +62,7 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   yabai -m rule --add app='^MonitorControl$' manage=off
   yabai -m rule --add app='^Bitwarden$' manage=off
   yabai -m rule --add app='^MeetingBar$' manage=off
+  yabai -m rule --add app='^Perplexity$' manage=off
 
   # Apply all rules
   yabai -m rule --apply
