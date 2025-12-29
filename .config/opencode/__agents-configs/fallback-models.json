@@ -1,0 +1,28 @@
+{
+  "agents": {
+    "Sisyphus": {
+      "model": "google/claude-opus-4-5-thinking"
+    },
+    "Planner-Sisyphus": {
+      "model": "google/claude-opus-4-5-thinking"
+    },
+    "librarian": {
+      "model": "google/claude-sonnet-4-5"
+    },
+    "explore": {
+      "model": "opencode/grok-code"
+    },
+    "oracle": {
+      "model": "google/claude-opus-4-5-thinking"
+    },
+    "frontend-ui-ux-engineer": {
+      "model": "google/gemini-3-pro-high"
+    },
+    "document-writer": {
+      "model": "google/gemini-3-flash"
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3-flash"
+    }
+  }
+}
