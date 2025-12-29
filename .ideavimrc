@@ -42,6 +42,7 @@ nnoremap * *zz
 nnoremap 0 ^
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
+nnoremap <Tab> viw
 nnoremap H ^
 nnoremap J mzJ`z
 nnoremap L $
@@ -55,10 +56,15 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 vnoremap L $
 vnoremap p "_dP
+vmap <Tab> <Action>(EditorSelectWord)
+vmap <S-Tab> <Action>(EditorUnSelectWord)
 
 " Paste from previous register
 nnoremap ,p "0p
 nnoremap ,P "0P
+
+nnoremap <cr> m`o<Esc>``
+nnoremap <S-cr> m`O<Esc>``
 
 " Editor action mappings ~ General
 map <leader>a <Action>(EditorAddCaretPerSelectedLine)
@@ -89,6 +95,8 @@ map ,u <Action>(Rerun)
 map ,b <Action>(ToggleLineBreakpoint)
 map ,d <Action>(ContextDebug)
 map ,n <Action>(ActivateDebugToolWindow)
+map N <Action>(MethodDown)
+map M <Action>(MethodUp)
 
 " Leader editor action mappings
 map <leader>w 0v$%$
