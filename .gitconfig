@@ -1,6 +1,7 @@
 [core]
 	excludesfile = /Users/cec/.gitignore_global
 	ignorecase = false
+	autocrlf = input
 [user]
 	name = Cecilie Ditlevsen
 	email = cecilierd98@gmail.com
