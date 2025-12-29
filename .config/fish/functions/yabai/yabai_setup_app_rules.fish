@@ -21,6 +21,8 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   # Messages
   yabai -m rule --add app='^Messenger$' space='messages' manage=off
   yabai -m rule --add app='^Slack$' space='messages'
+  yabai -m rule --add app='^Microsoft Teams$' space='messages'
+
 
   # Notes
   yabai -m rule --add app='^Notion$' space='^notes'
@@ -35,17 +37,10 @@ function yabai_setup_app_rules -d "Setup app rules for yabai"
   # Mail
   yabai -m rule --add app='^Spark Desktop$' title='^New Message$' space='^mail' manage=off
   yabai -m rule --add app='^Microsoft Outlook$' space='^mail'
-  yabai -m rule --add app='^Microsoft Outlook$' title='^\d+\s*Reminder(s)?$' manage=off
-  yabai -m rule --add app='^Microsoft Outlook$' title='^.*cec@charlietango\.dk$' manage=off
   yabai -m rule --add app='^Spark Desktop$' space='^mail'
 
   # Design tools
   yabai -m rule --add app='^Figma$' space='^other'
-
-  # Teams
-  yabai -m rule --add app='^Microsoft Teams$' space='^other'
-  yabai -m rule --add app='^Microsoft Teams$' title='^Dagrofa/CT.*$'  space='^other'
-  yabai -m rule --add app='^Microsoft Teams$' title='^Microsoft Teams Meeting'  space='^other'
 
   # Don't manage
   yabai -m rule --add app='^CleanShot X$' manage=off
