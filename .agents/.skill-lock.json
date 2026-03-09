@@ -1,0 +1,79 @@
+{
+  "version": 3,
+  "skills": {
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "079b06a135401704ea94ab74c7c9d86c92ba259f",
+      "installedAt": "2026-01-24T12:19:29.206Z",
+      "updatedAt": "2026-02-06T12:53:36.473Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-01-24T12:19:55.190Z",
+      "updatedAt": "2026-01-24T12:19:55.190Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "installedAt": "2026-01-24T12:20:19.560Z",
+      "updatedAt": "2026-01-24T12:20:19.560Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "534183ba408692754ff5470166200d672209e96c",
+      "installedAt": "2026-01-24T12:20:49.202Z",
+      "updatedAt": "2026-02-06T12:53:39.163Z"
+    },
+    "turborepo": {
+      "source": "vercel/turborepo",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/turborepo.git",
+      "skillPath": "skills/turborepo/SKILL.md",
+      "skillFolderHash": "37dc0ddf0f02d831d02f2551e6502e17ef06494b",
+      "installedAt": "2026-01-24T12:23:08.571Z",
+      "updatedAt": "2026-02-11T15:29:17.365Z"
+    },
+    "implement-design": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/implement-design/SKILL.md",
+      "skillFolderHash": "d067a8156ba4f4a28f6fc44904c2adebc2bb5920",
+      "installedAt": "2026-02-11T15:28:43.060Z",
+      "updatedAt": "2026-02-11T15:28:43.060Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-11T15:28:47.774Z",
+      "updatedAt": "2026-02-11T15:28:47.774Z"
+    }
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ],
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
+}
