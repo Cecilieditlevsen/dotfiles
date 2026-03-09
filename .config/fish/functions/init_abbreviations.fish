@@ -3,9 +3,11 @@ function init_abbreviations -d 'Initialize fish abbreviations'
     abbr --add c. 'code .'
     abbr --add cat bat
     abbr --add j z
-    abbr --add kp 'pnpm dlx kill-port 3000 3001 4000 6006 5173'
+    abbr --add kp 'pnpm dlx kill-port 3000 3001 3002 4000 4001 6006 5173'
     abbr --add killport 'pnpm dlx kill-port 3000 3001 4000 6006 5173'
-    abbr --add oc 'opencode'
+
+    # mise
+    abbr --add u mise update-all
 
     # homebrew (package manager)
     abbr --add b brew
@@ -31,21 +33,30 @@ function init_abbreviations -d 'Initialize fish abbreviations'
     abbr --add ghpc 'gh pr create -f'
     abbr --add ghpma 'gh pr merge --merge --squash'
     abbr --add ghpca 'gh pr create -f; and gh pr view -w'
+    abbr --add crp 'gh pr create --title "@coderabbitai" --body "" ; gh pr view -w'
     abbr --add ghpcd 'gh pr create -f -d'
     abbr --add ghw 'gh workflow view -w'
 
     # gitui
     abbr --add g gitui
 
+    # opencode
+    abbr --add oc 'opencode'
+    abbr --add occ 'rm -rf ~/.cache/opencode/node_modules ~/.cache/opencode/bun.lock'
+
     # git
     abbr --add gg "git pull ; git fetch --all --prune ; git branch -v | rg '\[gone\]' | awk '{print \$1}' | string trim -l | xargs -L 1 git branch -D"
     abbr --add ggr "git pull --rebase ; git fetch --all --prune ; git branch -v | rg '\[gone\]' | awk '{print \$1}' | string trim -l | xargs -L 1 git branch -D"
     abbr --add gbad "git branch -v | rg '\[gone\]' | awk '{print \$1}' | string trim -l | xargs -L 1 git branch -D"
-    abbr --add fomo 'git fetch --all --prune; and git rebase origin/main --rerere-autoupdate --reapply-cherry-picks'
-    abbr --add grm 'git fetch --all --prune; and git rebase origin/main --rerere-autoupdate --reapply-cherry-picks'
-    abbr --add grbm 'git fetch --all --prune; and git rebase origin/main --rerere-autoupdate --reapply-cherry-picks'
+    abbr --add fomo 'git fetch --all --prune; and git rebase origin/main'
+    abbr --add grm 'git fetch --all --prune; and git rebase origin/main'
+    abbr --add grbm 'git fetch --all --prune; and git rebase origin/main'
     abbr --add yolo 'git add --all ; git commit -m "¯\_(ツ)_/¯"'
-    abbr --add s 'git status -s'
+    abbr --add s 'git switch'
+    abbr --add s- 'git switch -'
+    abbr --add sc 'git switch -c'
+    abbr --add gsc 'git switch -c'
+    abbr --add sm 'git switch main'
     abbr --add ga 'git add'
     abbr --add gaa 'git add --all'
     abbr --add gap 'git apply'
@@ -80,7 +91,7 @@ function init_abbreviations -d 'Initialize fish abbreviations'
     abbr --add grba 'git rebase --abort'
     abbr --add grc 'git rebase --continue'
     abbr --add grac 'git rebase --continue'
-    abbr --add grr 'git rebase --rerere-autoupdate --reapply-cherry-picks'
+    abbr --add grr 'git rebase --rerere-autoupdate'
     abbr --add grhh 'git reset head --hard'
     abbr --add gruh 'git fetch origin; and git reset --hard origin/(git symbolic-ref --short HEAD)'
     abbr --add grv 'git remote -v'
@@ -89,6 +100,7 @@ function init_abbreviations -d 'Initialize fish abbreviations'
     abbr --add gsta 'git stash apply'
     abbr --add gsw 'git switch'
     abbr --add gswm 'git switch main'
+    abbr --add m 'git switch main'
     abbr --add gsw- 'git switch -'
     abbr --add gswc 'git switch -c'
 
