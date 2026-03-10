@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-best-practices/SKILL.md",
-      "skillFolderHash": "079b06a135401704ea94ab74c7c9d86c92ba259f",
+      "skillFolderHash": "fce8b5a24ff4ff2fc5db6aa1051e03b53c6b5bf1",
       "installedAt": "2026-01-24T12:19:29.206Z",
-      "updatedAt": "2026-02-06T12:53:36.473Z"
+      "updatedAt": "2026-03-09T08:07:57.195Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -33,27 +33,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "534183ba408692754ff5470166200d672209e96c",
+      "skillFolderHash": "45f9dcf935433abcb49929aef1d1bc3dedf20c79",
       "installedAt": "2026-01-24T12:20:49.202Z",
-      "updatedAt": "2026-02-06T12:53:39.163Z"
+      "updatedAt": "2026-03-09T08:08:01.390Z"
     },
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/turborepo.git",
       "skillPath": "skills/turborepo/SKILL.md",
-      "skillFolderHash": "37dc0ddf0f02d831d02f2551e6502e17ef06494b",
+      "skillFolderHash": "9b9571902ae124281fa27ed70b0aea5a2366172d",
       "installedAt": "2026-01-24T12:23:08.571Z",
-      "updatedAt": "2026-02-11T15:29:17.365Z"
+      "updatedAt": "2026-03-09T08:08:12.230Z"
     },
     "implement-design": {
       "source": "figma/mcp-server-guide",
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/implement-design/SKILL.md",
-      "skillFolderHash": "d067a8156ba4f4a28f6fc44904c2adebc2bb5920",
+      "skillFolderHash": "51523284d53fb7815acb784c7e347ffd5418c4f4",
       "installedAt": "2026-02-11T15:28:43.060Z",
-      "updatedAt": "2026-02-11T15:28:43.060Z"
+      "updatedAt": "2026-03-09T08:08:15.630Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",

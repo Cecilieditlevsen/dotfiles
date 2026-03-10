@@ -4,6 +4,9 @@
     "oh-my-opencode"
   ],
   "model": "openai/gpt-5.3-codex",
+  "keybinds": {
+    "command_list": "ctrl+k"
+  },
   "permission": {
     "bash": {
       "git commit *": "ask",
