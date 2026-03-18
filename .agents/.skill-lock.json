@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-best-practices/SKILL.md",
-      "skillFolderHash": "fce8b5a24ff4ff2fc5db6aa1051e03b53c6b5bf1",
+      "skillFolderHash": "18a9a6d17d5958d4ab10405883b80960644dbd5b",
       "installedAt": "2026-01-24T12:19:29.206Z",
-      "updatedAt": "2026-03-09T08:07:57.195Z"
+      "updatedAt": "2026-03-14T18:35:42.069Z"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",
@@ -33,18 +33,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "45f9dcf935433abcb49929aef1d1bc3dedf20c79",
+      "skillFolderHash": "9fa6850b305ad7237ffe61fc12f9e3d2d9c3d990",
       "installedAt": "2026-01-24T12:20:49.202Z",
-      "updatedAt": "2026-03-09T08:08:01.390Z"
+      "updatedAt": "2026-03-14T18:35:45.186Z"
     },
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel/turborepo.git",
       "skillPath": "skills/turborepo/SKILL.md",
-      "skillFolderHash": "9b9571902ae124281fa27ed70b0aea5a2366172d",
+      "skillFolderHash": "a21bb5fe156ee216fc27bd4306a7bc15c7bb3b89",
       "installedAt": "2026-01-24T12:23:08.571Z",
-      "updatedAt": "2026-03-09T08:08:12.230Z"
+      "updatedAt": "2026-03-14T18:36:21.736Z"
     },
     "implement-design": {
       "source": "figma/mcp-server-guide",
@@ -60,18 +60,30 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
       "installedAt": "2026-02-11T15:28:47.774Z",
-      "updatedAt": "2026-02-11T15:28:47.774Z"
+      "updatedAt": "2026-03-14T18:36:25.056Z"
+    },
+    "sanity-best-practices": {
+      "source": "sanity-io/agent-toolkit",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sanity-io/agent-toolkit.git",
+      "skillPath": "skills/sanity-best-practices/SKILL.md",
+      "skillFolderHash": "3c7165142517286d5812c9f5e29cc266b4200499",
+      "installedAt": "2026-03-14T18:35:15.701Z",
+      "updatedAt": "2026-03-14T18:35:15.701Z"
     }
   },
   "lastSelectedAgents": [
     "amp",
+    "cline",
     "codex",
+    "cursor",
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
-    "opencode"
+    "opencode",
+    "warp"
   ],
   "dismissed": {
     "findSkillsPrompt": true
